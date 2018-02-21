@@ -7,16 +7,18 @@ class HomeContainer extends Component {
     render() {
         return(
             <div className = 'main'>
-                <div>
-                    <Link to = 'ABOUT'>
-                        ABOUT
-                    </Link>
-                    <Link to = 'VIDEOS'>
-                        VIDEOS
-                    </Link>
-                    <Link to = 'CONTACT'>
-                        CONTACT
-                    </Link>
+                <div className = 'home-nav-container'>
+                    <div className = 'home-nav'>
+                        <Link to = '/about' className = 'home-link'>
+                            ABOUT
+                        </Link>
+                        <Link to = '/videos' className = 'home-link'>
+                            VIDEOS
+                        </Link>
+                        <Link to = '/contact' className = 'home-link'>
+                            CONTACT
+                        </Link>
+                    </div>
                 </div>
                 <h1 className = 'title'>
                     MIDNIGHT MARAUDER

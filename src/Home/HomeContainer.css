@@ -3,8 +3,32 @@
     height: 100%;
 }
 
+.home-nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99999;
+    position: absolute;
+}
+
+.home-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: blue;
+    background-color: red;
+}
+
+
+
 .title {
+    position: relative;
     height: 100vh;
+    background-color: blue;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
