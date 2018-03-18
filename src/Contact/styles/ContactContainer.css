@@ -21,6 +21,26 @@
 .contact-title {
     color: white;
     font-size: 75px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-title:hover {
+    cursor: pointer;
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: white;
+    transition: width .5s;
+}
+
+.contact-title:hover::after {
+    width: 100%;
+    cursor: pointer;
 }
 
 .contact-video {
@@ -31,4 +51,12 @@
 .facebook-icon {
     height: 50px;
     width: 50px;
+    padding: 5px;
+}
+
+
+
+@keyframes underline {
+    from {top: 0px;}
+    to {top: 200px;}
 }
