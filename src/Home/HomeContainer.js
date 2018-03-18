@@ -22,9 +22,6 @@ class HomeContainer extends Component {
                         <Link to = '/contact' className = 'home-link'>
                             CONTACT
                         </Link>
-                        <Link to = '/login'>
-                            <img src = 'usericon.png' className = 'nav-img'/>
-                        </Link>
                     </div>
                 </div>
                 <h1 className = 'title'>
