@@ -54,7 +54,13 @@
     padding: 5px;
 }
 
+.facebook-icon:hover {
+    cursor: pointer;
+}
 
+.contact-go-back {
+    
+}
 
 @keyframes underline {
     from {top: 0px;}
