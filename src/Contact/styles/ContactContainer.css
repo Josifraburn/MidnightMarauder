@@ -43,6 +43,24 @@
     cursor: pointer;
 }
 
+.contact-go-back:hover {
+    cursor: pointer;
+}
+
+.contact-go-back::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .5s;
+}
+
+.contact-go-back:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
 .contact-video {
     filter: blur(10px);
 }
@@ -59,7 +77,8 @@
 }
 
 .contact-go-back {
-    
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes underline {

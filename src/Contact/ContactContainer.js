@@ -6,16 +6,13 @@ class ContactContainer extends Component {
     render() {
         return(
             <div className = 'contact-container-main'>
-                <Link to = '/' className = 'contact-go-back'>
-                    GO BACK
-                </Link>
                 <div className = 'contact-container'>
-
+                    <Link to = '/' className = 'contact-go-back'>
+                        GO BACK
+                    </Link>
                     <video autoPlay muted loop id='myVideo' className = 'contact-video' >
                         <source src='DemoReel2k17.mp4' />
                     </video>
-                        {/* <div className = 'contact-box' >
-                        </div> */}
                         <h1 className = 'contact-title' >
                             contact.
                         </h1>
