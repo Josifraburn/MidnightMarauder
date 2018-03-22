@@ -1,6 +1,8 @@
 .contact-container-main {
     height: 100vh;
     width: 100vw;
+    z-index: -999999;
+    color: black;
 }
 
 .contact-container {
@@ -79,6 +81,10 @@
 .contact-go-back {
     text-decoration: none;
     color: white;
+}
+
+.contact-title-container-hidden {
+    display: none;
 }
 
 @keyframes underline {
