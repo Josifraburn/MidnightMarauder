@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/ContactContainer.css'
+import ContactBox from './ContactComponents/ContactBox'
 
 class ContactContainer extends Component {
 
@@ -9,14 +10,19 @@ class ContactContainer extends Component {
     }
 
     contactClick = () => {
-        this.setState({
+        this.setState( {
             contactTitleContainer: 'contact-title-container-hidden'
-        })
-        console.log('Hello this is working')
+        } )
     }
 
 
     render() {
+        const name = 'josif'
+
+        name === 'josif'
+            ? 'Hello'
+            : 'no hello'
+
         return(
             <div className = 'contact-container-main'>
                 <div className = 'contact-container'>
@@ -25,6 +31,11 @@ class ContactContainer extends Component {
                             GO BACK
                         </Link>
                     </div>
+                    {
+                        this.state.contactTitleContainer === 'contact-title-container-hidden'
+                            ?<ContactBox />
+                            :null
+                    }
                     <video autoPlay muted loop id='myVideo' className = 'contact-video' >
                         <source src='DemoReel2k17.mp4' />
                     </video>
