@@ -7,3 +7,7 @@
     opacity: .9;    
 }
 
+.contact-box-inputs {
+    display: flex;
+    flex-direction: column;
+}
