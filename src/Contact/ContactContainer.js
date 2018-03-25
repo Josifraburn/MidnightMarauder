@@ -17,6 +17,9 @@ class ContactContainer extends Component {
 
 
     render() {
+        const yo = () => {
+            console.log("it worked")
+        }
 
         return(
             <div className = 'contact-container-main'>
@@ -28,7 +31,7 @@ class ContactContainer extends Component {
                     </div>
                     {
                         this.state.contactTitleContainer === 'contact-title-container-hidden'
-                            ?<ContactBox />
+                            ?<ContactBox propName = 'Go Back' f = {yo} />
                             :null
                     }
                     <video autoPlay muted loop id='myVideo' className = 'contact-video' >
