@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/ContactBox.css'
 
 class ContactBox extends Component {
@@ -7,6 +8,7 @@ class ContactBox extends Component {
             <div>
                 <div className = 'test' >
                     <h1>lets work together.</h1>
+                    {/* <Link>Hello </Link> */}
                     <div className = 'contact-box-inputs' >
                         <input type = 'text' placeholder = 'Whats Your Name?' className = 'input1' />
                         <input type = 'email' placeholder = 'Whats Your E-Mail?' className = 'input2' />

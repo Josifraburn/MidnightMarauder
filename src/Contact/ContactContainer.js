@@ -17,11 +17,6 @@ class ContactContainer extends Component {
 
 
     render() {
-        const name = 'josif'
-
-        name === 'josif'
-            ? 'Hello'
-            : 'no hello'
 
         return(
             <div className = 'contact-container-main'>
