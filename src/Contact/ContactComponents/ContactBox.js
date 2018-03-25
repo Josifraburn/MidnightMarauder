@@ -8,9 +8,9 @@ class ContactBox extends Component {
                 <div className = 'test' >
                     <h1>lets work together.</h1>
                     <div className = 'contact-box-inputs' >
-                        <input type = 'text' placeholder = 'Name'/>
-                        <input type = 'text' placeholder = 'E-Mail' />
-                        <input type = 'text' placeholder = 'Tell me what you want to get done' />
+                        <input type = 'text' placeholder = 'Whats Your Name?' className = 'input1' />
+                        <input type = 'email' placeholder = 'Whats Your E-Mail?' className = 'input2' />
+                        <textarea type = 'text' placeholder = 'Tell me what you want to get done' className = 'input3' rows = '15'/>
                     </div>
                 </div>
             </div>
