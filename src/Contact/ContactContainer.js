@@ -14,12 +14,14 @@ class ContactContainer extends Component {
             contactTitleContainer: 'contact-title-container-hidden'
         } )
     }
-
+    
+    contactBoxGoBack = () => {
+        this.setState({
+            contactTitleContainer: 'contact-title-container'
+        })
+    }
 
     render() {
-        const yo = () => {
-            console.log("it worked")
-        }
 
         return(
             <div className = 'contact-container-main'>
@@ -31,7 +33,7 @@ class ContactContainer extends Component {
                     </div>
                     {
                         this.state.contactTitleContainer === 'contact-title-container-hidden'
-                            ?<ContactBox propName = 'Go Back' f = {yo} />
+                            ?<ContactBox propName = 'Go Back' f = {this.contactBoxGoBack} />
                             :null
                     }
                     <video autoPlay muted loop id='myVideo' className = 'contact-video' >
